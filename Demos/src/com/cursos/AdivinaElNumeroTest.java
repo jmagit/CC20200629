@@ -14,12 +14,14 @@ class AdivinaElNumeroTest {
 		String resultado = juego.validaJugada(55, 55);
 		assertEquals("Acertaste :)", resultado);
 	}
+	
 	@Test
 	void FallaPorMenorTest() {
 		AdivinaElNumero juego = new AdivinaElNumero();
 		String resultado = juego.validaJugada(55, 54);
 		assertEquals("No llegas", resultado);
 	}
+	
 	@ParameterizedTest
 	@ValueSource(ints = {56, 100, 111 } )
 	void FallaPorMayorTest(int numeroLeido) {
