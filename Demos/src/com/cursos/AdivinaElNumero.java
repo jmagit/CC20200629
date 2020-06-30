@@ -8,11 +8,11 @@ public class AdivinaElNumero {
 	public final byte NUMERO_INICIAL = 1;
 	public final byte NUMERO_FINAL = 100;
 
-	public void Jugar() {
+	public void jugar() {
 		BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
 		int objetivo = (int) (Math.random() * NUMERO_FINAL) + NUMERO_INICIAL;
 		System.out.println("Adivina que número he pensado:");
-		for (int intento = NUMERO_INICIAL; intento <= MAX_INTENTOS; intento++) {
+		for (int intento = 1; intento <= MAX_INTENTOS; intento++) {
 			try {
 				System.out.println("Dame un número entre el " + NUMERO_INICIAL + " y " + NUMERO_FINAL + " (" + objetivo
 						+ ") [Intento " + intento + "]: ");
