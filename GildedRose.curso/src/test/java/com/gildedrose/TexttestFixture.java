@@ -2,7 +2,18 @@ package com.gildedrose;
 
 public class TexttestFixture {
     public static void main(String[] args) {
-        System.out.println("OMGHAI!");
+    	try {
+    		actualizaProductos(args);
+    	} catch (ProductListException e) {
+			// pedir lista;
+    		// ...
+		} catch (Exception e) {
+			notificarExcepcion(e);
+		}
+    }
+
+	private static void actualizaProductos(String[] args) throws ProductListException {
+		System.out.println("OMGHAI!");
 
         Item[] items = new Item[] {
                 new Item("+5 Dexterity Vest", 10, 20), //
@@ -18,7 +29,7 @@ public class TexttestFixture {
 
         GildedRose app = new GildedRose(items);
 
-        int days = 2;
+        int days = 10;
         if (args.length > 0) {
             days = Integer.parseInt(args[0]) + 1;
         }
@@ -32,7 +43,13 @@ public class TexttestFixture {
             System.out.println();
             app.updateQuality();
         }
-    }
+	}
 
+	private static void notificarArgumentoInvalido(IllegalArgumentException e) {
+		System.out.println(e.getMessage());
+	}
 
+	private static void notificarExcepcion(Exception e) {
+		System.out.println(e.getMessage());
+	}
 }
