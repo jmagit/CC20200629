@@ -85,7 +85,7 @@ class GildedRoseTest {
 	@CsvSource({
 		"11, 10, 10, 9",
 		"7, 1, 6, 0",
-		"5, 0, 4, 0",
+		"5, -5, 4, 0",
 		"0, 3, -1, 1",
 		})
 	void otherProductTest(int sellIn, int quality, int sellInResult, int qualityResult) throws ProductListException {
@@ -124,7 +124,7 @@ class GildedRoseTest {
 	}
 
 	@Test
-	void dameItemsTest() throws ProductListException {
+	void getItemsTest() throws ProductListException {
 		String name = "Normal Product";
 		Item product = new Item("Normal Product", 1, 1);
 		Item[] originalItems = new Item[] { 
@@ -133,7 +133,7 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(originalItems);
         originalItems[0] = null;
         
-        Item[] rsltItems = app.dameItems();
+        Item[] rsltItems = app.getItems();
         rsltItems[0] = null;
         app.updateQuality();
         assertNotNull(rsltItems);
@@ -141,13 +141,13 @@ class GildedRoseTest {
 	}
 
 	@Test
-	void dameItemTest() throws ProductListException {
+	void getItemTest() throws ProductListException {
 		String name = "Normal Product";
 		Item product = new Item("Normal Product", 1, 2);
         GildedRose app = new GildedRose(new Item[] { 
         		product
         });
-        Item rsltItem = app.dameItem(0);
+        Item rsltItem = app.getItem(0);
         assertNotNull(rsltItem);
         assertAll(name,
         		() -> assertEquals("Normal Product", rsltItem.name, "name"),

@@ -143,11 +143,11 @@ public class GildedRose {
 		}
 	}
 
-	public Item[] dameItems() {
+	public Item[] getItems() {
 		return items.clone();
 	}
 
-	public Item dameItem(int productIndex) {
+	public Item getItem(int productIndex) {
 		return items[productIndex];
 	}
 
