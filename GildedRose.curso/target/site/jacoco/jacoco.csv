@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+gildedrose,com.gildedrose,ProductListException,23,0,0,0,10,0,5,0,5,0
+gildedrose,com.gildedrose,GildedRoseException,23,0,0,0,10,0,5,0,5,0
+gildedrose,com.gildedrose,GildedRose,10,296,2,36,2,63,2,36,0,19
+gildedrose,com.gildedrose,Item,35,27,0,2,8,11,5,4,5,3
