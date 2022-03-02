@@ -1,0 +1,6 @@
+projectKey=CodeSmell
+serverUrl=http://192.168.99.101:9000
+serverVersion=8.5.1.38104
+dashboardUrl=http://192.168.99.101:9000/dashboard?id=CodeSmell
+ceTaskId=AXXdUVpHg0iV9bUafC8X
+ceTaskUrl=http://192.168.99.101:9000/api/ce/task?id=AXXdUVpHg0iV9bUafC8X

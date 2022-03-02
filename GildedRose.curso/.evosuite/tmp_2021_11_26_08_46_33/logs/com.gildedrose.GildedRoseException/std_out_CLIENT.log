@@ -1,0 +1,80 @@
+* Starting client
+* Connecting to master process on port 12170
+* Analyzing classpath: 
+  - D:\Cursos\Java\Testing\CleanCode\GildedRose.curso\target\test-classes
+  - D:\Cursos\Java\Testing\CleanCode\GildedRose.curso\target\classes
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar
+  - D:\Trabajo\Java\apache-maven-3.6.0\.m2\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar
+* Finished analyzing classpath
+* Generating tests for class com.gildedrose.GildedRoseException
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 08:47:45.988 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: D:\Cursos\Java\Testing\CleanCode\GildedRose.curso\.evosuite\evosuite-seeds\com.gildedrose.GildedRoseException.seed
+* Loaded 0 tests from D:\Cursos\Java\Testing\CleanCode\GildedRose.curso\.evosuite\evosuite-seeds\com.gildedrose.GildedRoseException.seed
+* Total number of test goals: 
+  - Line 10
+  - Branch 5
+  - Exception 0
+  - MutationFactory 0
+  - Output 0
+  - Method 5
+  - MethodNoException 5
+  - CBranchFitnessFactory 5
+* Using seed 1637912862411
+* Starting evolution
+* Search finished after 6s and 0 generations, 3001 statements, best individual has fitness: 0.5
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100% (no goals)
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Generated 5 tests with total length 8
+* Resulting test suite's coverage: 100% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 100%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'GildedRoseException_ESTest' to D:\Cursos\Java\Testing\CleanCode\GildedRose.curso\.evosuite\tmp_2021_11_26_08_46_33\tests
+* Done!
+
