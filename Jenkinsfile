@@ -14,6 +14,11 @@ pipeline {
                echo 'This is a minimal pipeline.' 
             }
         }
+        stage('Test') { 
+            steps { 
+               sh './mvn -v' 
+            }
+        }
         stage("Compile") {
             steps { 
                 withMaven {
