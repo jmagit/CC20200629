@@ -9,11 +9,11 @@ pipeline {
                 sh "./mvn compile"
             }
         }
-    //     stage("Unit test") {
-    //         steps {
-    //             sh "./gradlew test"
-    //         }
-    //     }
+        stage("Unit test") {
+            steps {
+                sh "./mvn test"
+            }
+        }
     //     stage("Code coverage") {
     //         steps {
     //     	    sh "./gradlew jacocoTestReport"
