@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Compile") {
             steps {
-                sh "./GildedRose.curso/mvn compile"
+                sh "./mvn -help"
             }
         }
     }
