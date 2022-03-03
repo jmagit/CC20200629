@@ -21,9 +21,7 @@ pipeline {
         }
         stage("Compile") {
             steps { 
-                withMaven {
-                    bat'mvn clean compile'
-                }
+                sh'mvn clean compile'
             }
         }
     }
