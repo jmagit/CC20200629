@@ -20,8 +20,9 @@ pipeline {
             }
         }
         stage("Compile") {
-            steps { 
-                sh'mvn clean compile'
+            git url: 'https://github.com/jmagit/CC20200629/tree/master/GildedRose.curso'
+            withMaven {
+              sh "mvn clean verify"
             }
         }
     }
