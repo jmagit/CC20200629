@@ -20,9 +20,11 @@ pipeline {
             }
         }
         stage("Compile") {
-            git url: 'https://github.com/jmagit/CC20200629/tree/master/GildedRose.curso'
-            withMaven {
-              sh "mvn clean verify"
+            steps { 
+                git url: 'https://github.com/jmagit/CC20200629/tree/master/GildedRose.curso'
+                withMaven {
+                  sh "mvn clean verify"
+                }
             }
         }
     }
