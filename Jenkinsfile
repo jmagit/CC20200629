@@ -11,19 +11,23 @@ pipeline {
         }
         stage('Build') { 
             steps { 
-               echo 'This is a minimal pipeline.' 
+                echo 'This is a minimal pipeline.' 
+                git url: 'https://github.com/jmagit/CC20200629.git'
+                sh 'ls'
             }
         }
         stage('Test') { 
             steps { 
-               sh 'mvn -v' 
+                sh 'mvn -v' 
             }
         }
         stage("Compile") {
             steps { 
-                git url: 'https://github.com/jmagit/CC20200629/tree/master/GildedRose.curso'
+                git url: 'https://github.com/jmagit/CC20200629.git'
                 withMaven {
-                  sh "mvn clean verify"
+                  sh 'ls'
+                  sh 'cd ./GildedRose.curso'
+                  sh 'mvn clean verify'
                 }
             }
         }
