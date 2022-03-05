@@ -38,7 +38,7 @@ public class GildedRose {
 <span class="fc" id="L38">				updateEntradaQuality(productIndex);</span>
 <span class="fc bfc" id="L39" title="All 2 branches covered.">			} else if (esConjurado(productIndex)) {</span>
 <span class="fc" id="L40">				updateConjuradoQuality(productIndex);</span>
-<span class="fc" id="L41">			} else {</span>
+			} else {
 <span class="fc" id="L42">				updateProductosQuality(productIndex);</span>
 			}
 		}
@@ -55,7 +55,7 @@ public class GildedRose {
 <span class="fc" id="L55">			a�adeCalidad(productIndex, 3);</span>
 <span class="fc bfc" id="L56" title="All 2 branches covered.">		} else if (quedan10diasOMenos(productIndex)) {</span>
 <span class="fc" id="L57">			a�adeCalidad(productIndex, 2);</span>
-<span class="fc" id="L58">		} else {</span>
+		} else {
 <span class="fc" id="L59">			a�adeCalidad(productIndex, 1);</span>
 		}
 <span class="fc" id="L61">	}</span>
@@ -64,7 +64,7 @@ public class GildedRose {
 <span class="fc bfc" id="L64" title="All 2 branches covered.">		if (haCaducado(productIndex)) {</span>
 			// caducado degrada al doble de velocidad
 <span class="fc" id="L66">			quitaCalidad(productIndex, 4 * DEGRADACION_ESTANDAR);</span>
-<span class="fc" id="L67">		} else {</span>
+		} else {
 <span class="fc" id="L68">			quitaCalidad(productIndex, 2 * DEGRADACION_ESTANDAR);</span>
 		}
 <span class="fc" id="L70">	}</span>
@@ -72,7 +72,7 @@ public class GildedRose {
 	private void updateProductosQuality(int productIndex) {
 <span class="fc bfc" id="L73" title="All 2 branches covered.">		if (haCaducado(productIndex)) {</span>
 <span class="fc" id="L74">			quitaCalidad(productIndex, 2 * DEGRADACION_ESTANDAR);</span>
-<span class="fc" id="L75">		} else {</span>
+		} else {
 <span class="fc" id="L76">			quitaCalidad(productIndex, DEGRADACION_ESTANDAR);</span>
 		}
 <span class="fc" id="L78">	}</span>
@@ -123,7 +123,7 @@ public class GildedRose {
 
 <span class="fc bfc" id="L124" title="All 2 branches covered.">		if (items[productIndex].quality - cantidad &lt; 0) {</span>
 <span class="fc" id="L125">			items[productIndex].quality = 0;</span>
-<span class="fc" id="L126">		} else {</span>
+		} else {
 <span class="fc" id="L127">			items[productIndex].quality = items[productIndex].quality - cantidad;</span>
 		}
 
@@ -136,7 +136,7 @@ public class GildedRose {
 	private void a�adeCalidad(int productIndex, int cantidad) {
 <span class="fc bfc" id="L137" title="All 2 branches covered.">		if (items[productIndex].quality + cantidad &gt; CALIDAD_MAXIMA) {</span>
 <span class="fc" id="L138">			items[productIndex].quality = CALIDAD_MAXIMA;</span>
-<span class="fc" id="L139">		} else {</span>
+		} else {
 <span class="fc" id="L140">			items[productIndex].quality = items[productIndex].quality + cantidad;</span>
 		}
 <span class="fc" id="L142">	}</span>
