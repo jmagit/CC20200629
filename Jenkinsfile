@@ -26,8 +26,7 @@ pipeline {
                 git url: 'https://github.com/jmagit/CC20200629.git'
                 withMaven {
                   sh 'ls'
-                  sh 'cd ./GildedRose.curso'
-                  sh 'mvn clean verify'
+                  sh 'cd ./GildedRose.curso && mvn clean verify'
                 }
             }
         }
